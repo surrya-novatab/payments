@@ -1,0 +1,374 @@
+.checkout-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.checkout-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.checkout-title {
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Loading States */
+.payrix-loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    text-align: center;
+}
+
+.loading-message {
+    margin-top: 16px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Error States */
+.payrix-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.error-message {
+    text-align: center;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.error-message h3 {
+    color: #e74c3c;
+    margin-bottom: 12px;
+}
+
+.error-message p {
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.error-message button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.error-message button:hover {
+    background-color: #2980b9;
+}
+
+/* Security and Info Messages */
+.security-notice,
+.payment-info,
+.mobile-payment-info,
+.save-card-info {
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.security-notice p,
+.payment-info p,
+.mobile-payment-info p,
+.save-card-info p {
+    margin: 4px 0;
+    font-size: 13px;
+    color: #666;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 6px;
+    display: block;
+    font-weight: 500;
+}
+
+.input-field {
+    border: 1px solid #ddd;
+    height: 44px;
+    padding: 0;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.input-field:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+    outline: none;
+}
+
+/* Form Group Horizontal Layout */
+.form-group.horizontal {
+    display: flex;
+    gap: 12px;
+}
+
+.form-group.horizontal > div {
+    flex: 1;
+}
+
+.input-small {
+    min-width: 0;
+}
+
+.form-horizontal{
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* PayRix Specific Iframe Styling */
+#ccnumber, #ccexp, #cvv, #address{
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    height: 70px !important;
+    width: 100% !important;
+    margin-bottom: 16px !important;
+}
+
+/* PayRix iframe elements */
+#ccnumber iframe,
+#ccexp iframe,
+#cvv iframe,
+#address iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+    border-radius: 0 !important;
+    outline: none !important;
+}
+
+/* Focus states for iframe containers */
+#ccnumber:focus-within,
+#ccexp:focus-within,
+#cvv:focus-within,
+#ccnumber.focused,
+#ccexp.focused,
+#cvv.focused {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+/* Hover states */
+#ccnumber:hover,
+#ccexp:hover,
+#cvv:hover {
+    border-color: #bbb;
+}
+
+/* Valid states */
+#ccnumber.valid,
+#ccexp.valid,
+#cvv.valid {
+    border-color: #27ae60;
+}
+
+/* Error states */
+#ccnumber.error,
+#ccexp.error,
+#cvv.error {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);
+}
+
+/* Loading states for iframe containers */
+#ccnumber.loading,
+#ccexp.loading,
+#cvv.loading {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading-shimmer 2s infinite;
+}
+
+@keyframes loading-shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* PayRix Submit Button Styling *
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Submit Button */
+
+/* Loading overlay */
+.payrix-loading-overlay {
+    backdrop-filter: blur(2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .checkout-wrapper {
+        padding: 16px;
+    }
+    
+    .checkout-card {
+        padding: 20px;
+    }
+    
+    .checkout-title {
+        font-size: 18px;
+    }
+    
+    #ccnumber, #ccexp, #cvv {
+        height: 48px;
+    }
+    
+    #submit, .submit-button {
+        height: 52px;
+        font-size: 18px;
+    }
+    
+    .form-group.horizontal {
+        gap: 8px;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    #ccnumber, #ccexp, #cvv {
+        border: 2px solid #000;
+    }
+    
+    #ccnumber:focus-within,
+    #ccexp:focus-within,
+    #cvv:focus-within,
+    #ccnumber.focused,
+    #ccexp.focused,
+    #cvv.focused {
+        border-color: #0066cc;
+        box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.3);
+    }
+}
+.mobile-payment-info{
+    margin-top: 16px;
+}
+/* Additional utility classes */
+.checkout-container {
+    position: relative;
+}
+
+.card-payment-form {
+    margin-top: 0;
+}
+
+.card-payment-form .form-group:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Style for when iframes are not yet loaded */
+#ccnumber:not(:has(iframe)),
+#ccexp:not(:has(iframe)),
+#cvv:not(:has(iframe)) {
+    background: linear-gradient(90deg, #f8f8f8 25%, #e8e8e8 50%, #f8f8f8 75%);
+    background-size: 200% 100%;
+    animation: loading-shimmer 1.5s infinite;
+}
+
+/* Ensure proper z-index for iframes */
+#ccnumber iframe,
+#ccexp iframe,
+#cvv iframe {
+    z-index: 1;
+}
+
+/* Prevent iframe scrollbars */
+#ccnumber,
+#ccexp,
+#cvv,
+#zip {
+    overflow: hidden;
+}
+
+/* Additional iframe styling for better integration */
+.input-field iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+#google-pay-button {
+    width: 100%;
+    min-height: 48px;
+    margin-bottom: 16px;
+    /* Remove any styles that might hide the button */
+}
+
+.wallet-payment-section {
+    margin-bottom: 20px;
+}
+
+.payment-divider {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    text-align: center;
+}
+
+.payment-divider::before,
+.payment-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e1e5e9;
+}
+
+.payment-divider span {
+    padding: 0 16px;
+    color: #666;
+    font-size: 14px;
+    background: #fff;
+}

@@ -1,0 +1,116 @@
+.payment-card-container {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card-container {
+    max-width: 680px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+
+    .input-wrapper {
+        border: 1px solid #e6e6e6;
+        color: #696969;
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.custom-cancel {
+    width: 120px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #b3b3b3;
+    background-color: white;
+    color: #b3b3b3;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.custom-pay {
+    width: 120px;
+    height: 48px;
+    border-radius: 25px;
+    border: none;
+    background-color: #1A1A1A;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.custom-cancel:hover {
+    border-color: #8c8c8c;
+    color: #8c8c8c;
+}
+.custom-pay:disabled {
+    background-color: #a0a0a0;
+    color: white !important;
+    border-color: #8c8c8c !important;
+
+}
+.custom-pay:hover {
+    background-color: #8c8c8c;
+    color: white !important;
+    border-color: #8c8c8c !important;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+
+    .custom-cancel:hover {
+        border-color: #8c8c8c;
+        color: #8c8c8c;
+    }
+
+    // .custom-pay:hover {
+    //     background-color: #8c8c8c;
+    //     color: white !important;
+    //     border-color: #8c8c8c !important;
+
+    // }
+}
+
+.surcharge-notice {
+    color : #0A72F9
+}
+
+.form-group {
+    .label-text {
+        font-size: 18px;
+        font-weight: 500;
+        color: #1a1a1a;
+        font-family: "DM Sans", sans-serif;
+    }
+}

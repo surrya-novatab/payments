@@ -1,0 +1,190 @@
+.payment-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    padding: 20px;
+
+    // @media (max-width: 576px) {
+    //   .card-container {
+    //     // padding: 10px;
+    //     // Adjust for smaller screens
+    //   }
+      
+    // }
+    
+    .card-container {
+      width: 100%;
+      max-width: 500px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding: 30px;
+      max-height: 80vh; 
+      overflow-y: auto;
+      
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+        
+        img {
+          height: 28px;
+          margin-right: 12px;
+        }
+        
+        .card-title {
+          margin: 0;
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: #303030;
+        }
+      }
+      
+      .payment-form {
+        .form-group {
+          margin-bottom: 20px;
+          
+          .label-text {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #6b7c93;
+          }
+          
+          .input-wrapper {
+            border: 1px solid #e4e9f0;
+            border-radius: 6px;
+            padding: 12px;
+            transition: border-color 0.15s ease;
+            
+            &:focus-within {
+              border-color: #0a72f9;
+            }
+          }
+        }
+        
+        .payment-element-container {
+          padding: 10px 0;
+        }
+        
+        .surcharge-notice {
+          background-color: #f0f7ff;
+          border-radius: 6px;
+          padding: 10px;
+          margin-bottom: 20px;
+          font-size: 0.9rem;
+          color: #0a72f9;
+          display: flex;
+          align-items: center;
+        }
+        
+        .button-container {
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+          margin-top: 24px;
+          
+          .custom-cancel {
+            flex: 1;
+            height: 48px;
+            font-size: 1rem;
+            border-radius: 6px;
+            border: 1px solid #e4e9f0;
+            background-color: #ffffff;
+            color: #6b7c93;
+            
+            &:hover {
+              background-color: #f7f9fc;
+            }
+            
+            &:disabled {
+              opacity: 0.6;
+              cursor: not-allowed;
+            }
+          }
+          
+          .custom-pay {
+            flex: 2;
+            height: 48px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 6px;
+            border: none;
+            background-color: #0a72f9;
+            color: white;
+            
+            &:hover {
+              background-color: #0864e0;
+            }
+            
+            &:disabled {
+              opacity: 0.6;
+              cursor: not-allowed;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Separator style
+  .separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6b7c93;
+    
+    &::before,
+    &::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #e4e9f0;
+    }
+    
+    &::before {
+      margin-right: 10px;
+    }
+    
+    &::after {
+      margin-left: 10px;
+    }
+    
+    span {
+      font-size: 0.9rem;
+    }
+  }
+  
+  // Apple Pay button styling
+  .apple-pay-section {
+    margin-bottom: 20px;
+  }
+  
+  #card-errors {
+    color: #9e2146;
+    font-size: 0.9rem;
+    margin-top: 8px;
+  }
+  
+  // For responsive layout
+  @media (max-width: 576px) {
+    .payment-card-container {
+      padding: 10px;
+      
+      .card-container {
+        padding: 20px;
+      }
+      
+      .button-container {
+        flex-direction: column;
+        
+        .custom-cancel,
+        .custom-pay {
+          width: 100%;
+        }
+      }
+    }
+  }
