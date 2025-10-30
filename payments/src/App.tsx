@@ -11,7 +11,6 @@ const App: React.FC = () => {
         <Switch>
           <Route path="/stripe" component={MyPaymentsRouter} />
           <Route path="/payrix" component={PayrixRouter} />
-          <Route path="/" component={PayrixRouter} />
         </Switch>
       </Suspense>
     </BrowserRouter>
