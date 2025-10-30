@@ -1,5 +1,5 @@
 import React from "react";
-import { PayrixPaymentPageInfo } from "src/Payrix/Models/Payrix.modal";
+import type { PayrixPaymentPageInfo } from "src/Payrix/Models/Payrix.modal";
 import "./PayrixForm.css";
 declare global {
     interface IntrinsicElements {

@@ -1,0 +1,43 @@
+{
+  "baseUrl": "https://rcs-dev.bakeit360.com/unified",
+  "httpService": {
+    "serviceUrls": {
+      "communication": "https://rcs-dev.bakeit360.com/unified/communication-microservice/api/",
+      "location": "https://rcs-dev.bakeit360.com/unified/location-microservice/api/",
+      "notification": "https://rcs-dev.bakeit360.com/unified/notification-microservice/api/",
+      "restaurantAccount": "https://rcs-dev.bakeit360.com/unified/restaurant-account-microservice/api/",
+      "restaurantMenu": "https://rcs-dev.bakeit360.com/unified/restaurant-menu-microservice/api/",
+      "restaurant": "https://rcs-dev.bakeit360.com/unified/restaurant-microservice/api/",
+      "kioskSettings": "https://rcs-dev.bakeit360.com/order-management/",
+      "restaurantOrder": "https://rcs-dev.bakeit360.com/unified/restaurant-order-microservice/api/",
+      "restaurantOrderVersionTwo": "https://rcs-dev.bakeit360.com/unified/restaurant-order-microservice/api/v4/",
+      "restaurantSetting": "https://rcs-dev.bakeit360.com/unified/restaurant-settings-microservice/api/",
+      "userAccount": "https://rcs-dev.bakeit360.com/unified/user-account-microservice/api/",
+      "payments": "https://rcs-dev.bakeit360.com/unified/payments-microservice/api/",
+      "subscriptions": "https://rcs-dev.bakeit360.com/unified/subscription-microservice/api/",
+      "cardconnect": "https://fts-uat.cardconnect.com/itoke/ajax-tokenizer.html",
+      "reports": "https://dev01.as1.dev.bakeit360.com/unified/reports-microservice/api/",
+      "reports-microservice": "https://dev01.as1.dev.bakeit360.com/reports/",
+      "config": "https://dev01.as1.dev.bakeit360.com/unified/config-microservice/api/",
+      "transactions": "https://dev01.as1.dev.bakeit360.com/unified/transaction-microservice/api/",
+      "business": "https://dev01.as1.dev.bakeit360.com/unified/business-microservice/api/",
+      "assets": "https://dev01.as1.dev.bakeit360.com/unified/assets-microservice/api/",
+      "services": "https://dev01.as1.dev.bakeit360.com/unified/services/",
+      "migrate": "https://dev01.as1.dev.bakeit360.com/unified/restaurant-microservice/services/",
+      "kdsSetup": "https://dev01.as1.dev.bakeit360.com/kds/api/",
+      "customers": "https://dev01.as1.dev.bakeit360.com/mycustomers/",
+      "timesheetreports": "https://dev01.as1.dev.bakeit360.com/unified/reports-microservice/api/",
+      "aiCampaigns": "https://dev01.as1.dev.bakeit360.com/campaign/",
+      "timesheetaddedit": "https://dev01.as1.dev.bakeit360.com/employee-management/schedule/",
+      "audit": "https://dev01.as1.dev.bakeit360.com/audit/",
+      "employeeMicroService": "https://rcs-dev.bakeit360.com/employee-management/",
+      "payrollIntegration": "https://dev01.as1.dev.bakeit360.com/payroll-integration/",
+      "localService": "http://192.168.3.243:3000/",
+      "discounts":"https://dev01.as1.dev.bakeit360.com/unified/restaurant-discount-microservice/api/",
+      "authService": "https://dev01.as1.dev.bakeit360.com/auth/",
+      "rbacUnified": "https://dev01.as1.dev.bakeit360.com/unified/",
+      "rewardService": "https://dev01.as1.dev.bakeit360.com/rewards/"
+    },
+    "applicationName": "BakeIt360.Web"
+  }
+}

@@ -1,0 +1,33 @@
+{
+    "baseUrl": "https://qa.us.api.bakeit360.com",
+    "httpService": {
+        "serviceUrls": {
+            "communication": "https://qa.us.api.bakeit360.com/communication-microservice/api/",
+            "location": "https://qa.us.api.bakeit360.com/location-microservice/api/",
+            "notification": "https://qa.us.api.bakeit360.com/notification-microservice/api/",
+            "restaurantAccount": "https://qa.us.api.bakeit360.com/restaurant-account-microservice/api/",
+            "restaurantMenu": "https://qa.us.api.bakeit360.com/restaurant-menu-microservice/api/",
+            "restaurant": "https://qa.us.api.bakeit360.com/restaurant-microservice/api/",
+            "restaurantOrder": "https://qa.us.api.bakeit360.com/restaurant-order-microservice/api/",
+            "restaurantOrderVersionTwo": "https://qa.us.api.bakeit360.com/restaurant-order-microservice/api/v4/",
+            "restaurantSetting": "https://qa.us.api.bakeit360.com/restaurant-settings-microservice/api/",
+            "userAccount": "https://qa.us.api.bakeit360.com/user-account-microservice/api/",
+            "payments": "https://qa.us.api.bakeit360.com/payments-microservice/api/",
+            "subscriptions": "https://qa.us.api.bakeit360.com/subscription-microservice/api/",
+            "cardconnect": "https://fts-uat.cardconnect.com/itoke/ajax-tokenizer.html",
+            "reports": "https://qa.us.api.bakeit360.com/reports-microservice/api/",
+            "reports-microservice": "http://192.168.2.76:3000/",
+            "config": "https://qa.us.api.bakeit360.com/config-microservice/api/",
+            "transactions": "https://qa.us.api.bakeit360.com/transaction-microservice/api/",
+            "business": "https://qa.us.api.bakeit360.com/business-microservice/api/",
+            "assets": "https://qa.us.api.bakeit360.com/assets-microservice/api/",
+            "services": "https://qa.us.api.bakeit360.com/services/",
+            "kdsSetup": "https://qa.us.api.plateron.com/api/",
+            "authService": "https://qa.us.api.plateron.com/auth/",
+            "rbacUnified": "https://qa.us.api.plateron.com/unified/",
+            "rewardService": "https://qa.us.api.bakeit360.com/rewards/"
+            
+        },
+        "applicationName": "BakeIt360.Web"
+    }
+}

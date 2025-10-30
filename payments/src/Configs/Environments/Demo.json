@@ -1,0 +1,38 @@
+{
+    "baseUrl": "https://uat.us.api.bakeit360.com",
+    "httpService": {
+        "serviceUrls": {
+            "communication": "https://uat.us.api.bakeit360.com/communication-microservice/api/",
+            "location": "https://uat.us.api.bakeit360.com/location-microservice/api/",
+            "notification": "https://uat.us.api.bakeit360.com/notification-microservice/api/",
+            "restaurantAccount": "https://uat.us.api.bakeit360.com/restaurant-account-microservice/api/",
+            "restaurantMenu": "https://uat.us.api.bakeit360.com/restaurant-menu-microservice/api/",
+            "restaurant": "https://uat.us.api.bakeit360.com/restaurant-microservice/api/",
+            "restaurantOrder": "https://uat.us.api.bakeit360.com/restaurant-order-microservice/api/",
+            "posRestaurantOrder": "https://uat.us.api.bakeit360.com/restaurant-order-microservice/POS/api/",
+            "restaurantOrderVersionTwo": "https://uat.us.api.bakeit360.com/restaurant-order-microservice/api/v4/",
+            "restaurantSetting": "https://uat.us.api.bakeit360.com/restaurant-settings-microservice/api/",
+            "userAccount": "https://uat.us.api.bakeit360.com/user-account-microservice/api/",
+            "payments": "https://uat.us.api.bakeit360.com/payments-microservice/api/",
+            "subscriptions": "https://uat.us.api.bakeit360.com/subscription-microservice/api/",
+            "cardconnect": "https://fts-uat.cardconnect.com/itoke/ajax-tokenizer.html",
+            "reports": "https://uat.us.api.bakeit360.com/reports-microservice/api/",
+            "reports-microservice": "https://uat.us.ms.plateron.com/reportservice-api/",
+            "config": "https://uat.us.api.bakeit360.com/config-microservice/api/",
+            "transactions": "https://uat.us.api.bakeit360.com/transaction-microservice/api/",
+            "business": "https://uat.us.api.bakeit360.com/business-microservice/api/",
+            "assets": "https://uat.us.api.bakeit360.com/assets-microservice/api/",
+            "services": "https://uat.us.api.bakeit360.com/services/",
+            "kdsSetup": "https://uat.us.api.plateron.com/api/",
+            "customers": "https://uat.us.ms.plateron.com/customerservice-api/",
+            "timesheetreports": "https://uat.us.api.bakeit360.com/reports-microservice/api/",
+            "employeeMicroService": "https://uat.us.ms.plateron.com/employee-microservice/",
+            "authService": "https://uat01.usw1.bakeit360.com/auth/",
+            "rbacUnified": "https://uat01.usw1.bakeit360.com/unified/"
+ 
+
+            
+        },
+        "applicationName": "BakeIt360.Web"
+    }
+}

@@ -1,0 +1,33 @@
+{
+  "baseUrl": "https://preprod.us.api.bakeit360.com",
+  "httpService": {
+    "serviceUrls": {
+      "communication": "https://preprod.us.api.bakeit360.com/communication-microservice/api/",
+      "location": "https://preprod.us.api.bakeit360.com/location-microservice/api/",
+      "notification": "https://preprod.us.api.bakeit360.com/notification-microservice/api/",
+      "restaurantAccount": "https://preprod.us.api.bakeit360.com/restaurant-account-microservice/api/",
+      "restaurantMenu": "https://preprod.us.api.bakeit360.com/restaurant-menu-microservice/api/",
+      "restaurantOrderVersionTwo": "https://preprod.us.api.bakeit360.com/restaurant-order-microservice/api/v4/",
+      "restaurantSetting": "https://preprod.us.api.bakeit360.com/restaurant-settings-microservice/api/",
+      "restaurant": "https://preprod.us.api.bakeit360.com/restaurant-microservice/api/",
+      "restaurantOrder": "https://preprod.us.api.bakeit360.com/restaurant-order-microservice/api/",
+      "userAccount": "https://preprod.us.api.bakeit360.com/user-account-microservice/api/",
+      "payments": "https://preprod.us.api.bakeit360.com/payments-microservice/api/",
+      "subscriptions": "https://preprod.us.api.bakeit360.com/subscription-microservice/api/",
+      "cardconnect": "https://fts-uat.cardconnect.com/itoke/ajax-tokenizer.html",
+      "reports": "https://preprod.us.api.bakeit360.com/reports-microservice/api/",
+      "reports-microservice": "https://preprod.us.ms.plateron.com/reportservice-api/",
+      "config": "https://preprod.us.api.bakeit360.com/config-microservice/api/",
+      "transactions": "https://preprod.us.api.bakeit360.com/transaction-microservice/api/",
+      "business": "https://preprod.us.api.bakeit360.com/business-microservice/api/",
+      "assets": "https://preprod.us.api.bakeit360.com/assets-microservice/api/",
+      "kdsSetup": "https://preprod.us.api.plateron.com/api/",
+      "timesheetreports": "https://preprod.us.api.bakeit360.com/reports-microservice/api/",
+      "employeeMicroService": "https://preprod.us.ms.plateron.com/employee-microservice/",
+      "authService": "https://preprod.us.ms.plateron.com/auth/",
+      "rbacUnified": "https://preprod.us.ms.plateron.com/unified/",
+      "rewardService": "https://preprod.us.api.bakeit360.com/rewards/"
+    },
+    "applicationName": "BakeIt360.Web"
+  }
+}

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Stripe, loadStripe } from "@stripe/stripe-js";
 import Loading from "src/Shared/Components/Loading";
 import { useParams } from "react-router-dom";
-import useQueryParams from "src/Reports/Hooks/useQueryParams";
+import useQueryParams from "src/hooks/useQueryParams";
 import {
     getStripeDetailsByMerchantID,
     IMerchantDetails,

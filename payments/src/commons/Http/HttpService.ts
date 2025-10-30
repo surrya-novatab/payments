@@ -1,17 +1,15 @@
-import { HttpHeaderParameter, HttpParameter } from "./Models/HttpParameter";
-import { HttpResult } from "./Models/HttpResult";
-import axios, { CancelToken, CancelTokenSource } from "axios";
+import type { HttpHeaderParameter, HttpParameter } from "./Models/HttpParameter";
+import type { HttpResult } from "./Models/HttpResult";
+import axios from "axios";
+import type { CancelToken, CancelTokenSource } from "axios";
 import {
-    getBusinessRefIdEnhanced,
-    getRestaurantFromReduxStore,
-    getRestaurantRefIdEnhanced,
     getToken,
     getXFeatureAccess,
 } from "src/Shared/Utils/LocalStorageUtils";
 import { pathOr } from "ramda";
 import { HttpRequestHeader } from "src/Shared/Enums/HttpRequestHeader";
 import { ConfigProvider } from "src/Configs/Environments/Environments";
-import { ServiceUrls } from "src/Configs/Environments/Models";
+import type { ServiceUrls } from "src/Configs/Environments/Models";
 
 interface header {
     [key: string]: string | boolean | undefined;
@@ -33,16 +31,10 @@ const createRequest = () => {
         const headers: header = {};
         headers[HttpRequestHeader.Authorization] = `Bearer ${getToken()}`;
         headers[HttpRequestHeader.ApplicatioName] = "BakeIt360.Web"; // Match the working curl request
-        headers[HttpRequestHeader.RestaurantRefId] = getRestaurantFromReduxStore().refId;
-        headers[HttpRequestHeader.AccountID] = getRestaurantFromReduxStore().businessRefId;
-        headers[HttpRequestHeader.LocationId] = getRestaurantFromReduxStore().refId;
         headers[HttpRequestHeader.xFeatureAccess] = xFeatureAccess;
         headers[HttpRequestHeader.CacheControl] = "no-store, no-cache, must-revalidate";
         headers[HttpRequestHeader.Pragma] = "no-cache";
         headers[HttpRequestHeader.Expires] = "0";
-        headers["location-id"] = getRestaurantFromReduxStore().refId;
-        headers["account-id"] = getRestaurantFromReduxStore().businessRefId;
-        headers["restaurantrefid"] = getRestaurantFromReduxStore().refId; // Add this header to match curl
 
         if (parameter.headers) {
             parameter.headers.forEach((h) => {
