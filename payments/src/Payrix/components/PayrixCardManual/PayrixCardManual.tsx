@@ -21,8 +21,7 @@ declare global {
 }
 const PayrixCardManual: React.FC = () => {
     
-    console.log('reached')
-    return "hello world";
+  
 
     const [paymentInfo, setPaymentInfo] = useState<PayrixPaymentPageInfo | null>(null);
     const [loadingState, setLoadingState] = useState<PayrixLoadingState>({
