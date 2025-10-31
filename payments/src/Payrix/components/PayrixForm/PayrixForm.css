@@ -246,7 +246,7 @@
 }
 
 /* PayRix Submit Button Styling */
-#submit{width: 100%;
+#submit{
     height: 52px !important;
     padding: 10px 32px;
     display: flex;

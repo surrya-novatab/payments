@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
-import { lazyWithRetry } from "./Shared/Utils/lazyWithRetry";
 import Loading from "./Shared/Components/Loading";
 import PayrixRouter from "./Payrix/Payrix";
 import MyPaymentsRouter from "./MyPayments/MyPaymentsRouter";
