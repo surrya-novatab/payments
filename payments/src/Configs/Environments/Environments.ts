@@ -1,6 +1,7 @@
 import { getXFeatureAccess } from "src/Shared/Utils/LocalStorageUtils";
-// import { ConfigModel } from "./Models";
+import { ConfigModel } from "./Models";
 import { getEnvConfigKey } from "./Utils/environment.utils";
+import demoConfig from "./Demo.json";
 
 const ENV_CONFIG_URL =
     "https://dev-rms-config-294f655d18b3.s3.ap-south-1.amazonaws.com/external-config.json";
@@ -16,10 +17,10 @@ const loadConfig = (xFeature: boolean): ConfigModel => {
             return getEnvConfigKey(xFeature, data);
         } else {
             console.error(`Failed to load configuration. Status: ${xhr.status}`);
-            return require("./Prod.json");
+            return demoConfig as unknown as ConfigModel;
         }
     } catch (error) {
-        return require("./Prod.json");
+        return demoConfig as unknown as ConfigModel;
     }
 };
 
