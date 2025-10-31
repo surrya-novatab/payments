@@ -10,8 +10,8 @@ const App: React.FC = () => {
     <BrowserRouter>
       <Suspense fallback={<Loading />}>
         <Switch>
-          <Route path="/" component={MyPaymentsRouter} />
           <Route path="/payrix" component={PayrixRouter} />
+          <Route path="/" component={MyPaymentsRouter} />
         </Switch>
       </Suspense>
     </BrowserRouter>
