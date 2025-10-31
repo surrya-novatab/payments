@@ -8,6 +8,10 @@ export const isProduction = (): boolean => {
     if (!hostname.includes("novatab.com")) {
         return false;
     }
+         // Check for specific production hostname
+    if (hostname === "restaurants.novatab.com") {
+        return true;
+    }
 
     return hostname.includes("prod") || (!hostname.includes("uat") && hostname.includes("novatab.com"));
 
