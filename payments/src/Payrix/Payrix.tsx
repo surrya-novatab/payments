@@ -1,9 +1,19 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import PayrixSaveCard from "./components/PayrixSaveCard/PayrixSaveCard";
-import PayrixCardManual from "./components/PayrixCardManual/PayrixCardManual";
-import PayrixMobilePayment from "./components/PayrixMobilePayment/PayrixMobilePayment";
-import PayrixSaveAndPay from "./components/PayrixSaveAndPay/PayrixSaveAndPay";
+import { lazyWithRetry } from "src/Shared/Utils/lazyWithRetry";
+
+const PayrixMobilePayment = lazyWithRetry(
+  () => import("./components/PayrixMobilePayment/PayrixMobilePayment")
+);
+const PayrixCardManual = lazyWithRetry(
+  () => import("./components/PayrixCardManual/PayrixCardManual")
+);
+const PayrixSaveAndPay = lazyWithRetry(
+  () => import("./components/PayrixSaveAndPay/PayrixSaveAndPay")
+);
+const PayrixSaveCard = lazyWithRetry(
+  () => import("./components/PayrixSaveCard/PayrixSaveCard")
+);
 
 interface PayrixRouterProps {
   basePath?: string;
