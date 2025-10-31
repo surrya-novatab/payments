@@ -3,10 +3,14 @@ import { Route, Switch } from "react-router-dom";
 import Loading from "../Shared/Components/Loading";
 
 // Lazy load components for better performance
-import PaymentPage from "./CardManual/PaymentPage";
-import PaymentElementsPage from "./PaymentElements/PaymentElementsPage";
-import SaveCardPage from "./SaveCard/SaveCardPage";
-import SaveAndPay from "./SaveAndPay/SaveAndPay";
+import { lazyWithRetry } from "src/Shared/Utils/lazyWithRetry";
+
+const PaymentPage = lazyWithRetry(() => import("./CardManual/PaymentPage"));
+const PaymentElementsPage = lazyWithRetry(
+  () => import("./PaymentElements/PaymentElementsPage")
+);
+const SaveCardPage = lazyWithRetry(() => import("./SaveCard/SaveCardPage"));
+const SaveAndPay = lazyWithRetry(() => import("./SaveAndPay/SaveAndPay"));
 
 interface MyPaymentsRouterProps {
   basePath?: string;
@@ -32,7 +36,7 @@ const routes = [
 ];
 
 const MyPaymentsRouter: React.FC<MyPaymentsRouterProps> = ({
-  basePath = "/stripe",
+  basePath = "/",
 }) => {
   return (
     <div className="stripe-router">
@@ -42,7 +46,7 @@ const MyPaymentsRouter: React.FC<MyPaymentsRouterProps> = ({
             <Route
               key={path}
               exact
-              path={`${basePath}/${path}`}
+              path={`/${path}`}
               component={Component}
             />
           ))}
